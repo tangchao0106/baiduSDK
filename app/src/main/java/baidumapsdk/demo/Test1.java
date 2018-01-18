@@ -2,6 +2,7 @@ package baidumapsdk.demo;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 
 import com.baidu.mapapi.model.LatLng;
@@ -27,6 +28,7 @@ public class Test1 extends Activity {
         initView();
 
         LatLng locationLatLng = new LatLng(32.169378, 118.710009);
+        Log.d("cs", "4");
 
         //
 // 将google地图、soso地图、aliyun地图、mapabc地图和amap地图// 所用坐标转换成百度坐标
@@ -34,8 +36,12 @@ public class Test1 extends Activity {
         converter.from(CoordinateConverter.CoordType.COMMON);
 // sourceLatLng待转换坐标
         converter.coord(locationLatLng);
-        com.baidu.mapapi.model.LatLng desBaiduStartLatLng = converter.convert();
-        tvtest.setText(desBaiduStartLatLng.latitude+"==="+desBaiduStartLatLng.longitude);
+        Log.d("cs", "5");
+
+//        com.baidu.mapapi.model.LatLng desBaiduStartLatLng = converter.convert();
+        Log.d("cs", "6");
+
+//        tvtest.setText(desBaiduStartLatLng.latitude+"==="+desBaiduStartLatLng.longitude);
 
     }
 

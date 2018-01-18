@@ -19,8 +19,12 @@ android {
             storeFile file("debug.keystore")
         }
     }
-
     sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+/*    sourceSets {
         main {
             jniLibs.srcDir 'libs'
         }
@@ -36,7 +40,7 @@ android {
         // by a similar customization.
         debug.setRoot('build-types/debug')
         release.setRoot('build-types/release')
-    }
+    }*/
     defaultConfig {
         applicationId "baidumapsdk.demo"
         minSdkVersion 9
