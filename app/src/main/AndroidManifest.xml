@@ -45,7 +45,7 @@
             android:value="请输入KEY" />
 
         <activity
-            android:name=".Test1"
+            android:name=".BMapApiDemoMain"
             android:configChanges="orientation|keyboardHidden"
             android:label="BaiduMapSDKDemo"
             android:screenOrientation="portrait" >
@@ -55,7 +55,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-<!--            <activity android:name=".Test1" />-->
+            <activity android:name=".Test1" />
 
             <activity
             android:name=".map.BaseMapDemo"
